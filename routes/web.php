@@ -16,7 +16,6 @@ Route::get('/contact', function () {
     return view('contact');
 }); 
 
-
-Route::get('/branch', function () {
-    return view('meshal');
-});
+Route::get('/services', function () {
+    return view('services');
+}); 
