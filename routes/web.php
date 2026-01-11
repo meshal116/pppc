@@ -28,3 +28,7 @@ Route::get('/meshal', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/website', function () {
+    return view('website');
+});
