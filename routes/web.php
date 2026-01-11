@@ -23,3 +23,8 @@ Route::get('/services', function () {
 Route::get('/meshal', function () {
     return view('branch');
 });
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
